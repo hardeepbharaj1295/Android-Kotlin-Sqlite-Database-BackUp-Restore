@@ -1,0 +1,84 @@
+<LinearLayout
+        android:orientation="vertical"
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:text="HOME"/>
+
+    <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:onClick="importExcel"
+                android:layout_weight="1"
+                android:text="IMPORT EXCEL SHEET"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <Button
+                android:layout_weight="1"
+                android:text="ITEM DETAILS"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/item" android:onClick="items"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:layout_weight="1"
+                android:text="EXPORT DATA"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:onClick="export"/>
+
+        <Button
+                android:layout_weight="1"
+                android:text="DATABASE BACKUP"
+                android:textSize="35dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:onClick="importData"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:onClick="logout"
+                android:layout_weight="1"
+                android:text="LOGOUT"
+                android:textAlignment="center"
+                android:textSize="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

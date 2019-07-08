@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/pbr"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Part Number"/>
+        <item
+                android:id="@+id/stock"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Stock Available"/>
+        <item
+                android:id="@+id/inward"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="PBR Inward"/>
+        <item
+                android:id="@+id/outward"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="PBR Outward"/>
+        <item
+                android:id="@+id/monitoring"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Monitoring"/>
+        <item
+                android:id="@+id/sg"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="SG Connection"/>
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="@string/menu_share"/>
+            <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="@string/menu_send"/>
+        </menu>
+    </item>
+
+</menu>

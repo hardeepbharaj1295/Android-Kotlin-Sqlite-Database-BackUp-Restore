@@ -1,0 +1,120 @@
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="20dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="SIGN UP"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+            android:inputType="text"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textAlignment="center"
+            android:hint="ENTER YOUR NAME"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+    <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="ENTER YOUR EMAIL"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+    <EditText
+            android:inputType="number"
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="CONTACT NUMBER"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+    <EditText
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="CREATE A PASSWORD"
+            android:textSize="15dp"
+            android:gravity="center"/>
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="130dp"
+            android:layout_marginTop="20dp"
+            android:text="REGISTER" android:onClick="goToRegister"/>
+
+    <LinearLayout
+            android:layout_marginTop="20dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <View
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:textSize="20dp"/>
+
+        <View
+                android:layout_margin="10dp"
+                android:layout_weight="5"
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:onClick="gotoLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already a user ? LOGIN "
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="20dp"/>
+
+</LinearLayout>
